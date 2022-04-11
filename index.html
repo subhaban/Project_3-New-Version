@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>HTML5 Video with JS synchronized cuepoints: demo</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="c/main.css" />
+	<script src="j/video_helpers.js" defer></script>
+	<script src="j/transcript.js" defer></script>
+	<script type="module" src="j/main.js" defer></script>
+
+
+</head>
+
+<body>
+	<h1>Lab 5 Audio and Video practice </h1>
+
+	<main id="container">
+
+		<section class="col1">
+
+			<video id="vid" width="350"  controls>
+				
+				<source src="assets/spices.mp4" id="spices" type="video/mp4">
+				<source src="assets/Spices.webm" id="spicesweb" type="video/mp4">
+				<source src="assets/Cinnamonstory.mp4" id="cooking" type="video/mp4">
+				<track kind="captions" label="On" srclang="en" src="./captions/spices.vtt" default>
+
+				<!-- final fallback to text -->
+				<h2>How to leverage a synergy</h2>
+				<p>spices they're good for the soul but they're also good for our bodies we'vegot a roundup of all the best spices and what makes them so good for your health.
+					Hey guys ,Tara here for dnews and if you're a person who enjoys cooking or eating then you'll be happy to know that many of the spices we use in our food everyday can also have very real health benefits a new study from the Rush University Medical Center finds that cinnamon can actually reverse the anatomical changes that occur in the brains of mice with Parkinson's disease cinnamon has long been known to be great for your health it's loaded with antioxidants and it's especially helpful for people with type 2 diabetes a 2010 study found that consuming two grams of cinnamon every day for 12 weeks significantly lowered patient's blood pressure and blood sugar levels in another study from that same year found that cinnamon extract can actually increase insul this is great news for me but it also got me thinking about other spices and what kinds of benefits those have so I thought I would do a little roundup for you guys of the most healthful spices out there and why each of them is so good for you turmeric for example which is found in a lot of Indian food may actually help fight cancer it contains an antioxidant called curcumin that's been shown to enhance the effectiveness of chemo in patients with breast cancer so much in fact that it's now being considered as a possible drug supplement for chemotherapy it's also been shown tosuppress the specific cell pathway that's known to fuel the growth of head and neck cancer if you're not a fan of Indian food that is okay because rosemary has also been shown to minimize the risk of cancer the 2010 study found that rosemary is the number one most effective spice when it comes to reducing the amount of carcinogenic compounds you ingest from cooking groundnbeef it's also known to have significant antibacterial properties as well as antifungal properties which makes it a good home remedy for yeast infections if you have a bacterial infection though time effective inhibitor of harmful bacterial growth in raw poultry so if you were to marinade chicken in essential thyme oil you could greatly extend its shelf life it's even being considered as a possible alternative treatment for antibiotic resistant like MRSA that plus it's anti-inflammatory properties make time one of the best home remedies for acne and speaking of anti-inflammatories ginger is also one of the most effective natural ones out there it contains two key phytochemicals known to fight inflammation which is why you typically see it used in teas for people congestion or sore throat it's also great for arthritis and research published in the Journal of pain shows that daily supplements containing 2 grams of ginger can actually ease muscle pain from exercising by 25% if pain is a common problem for you then you may also be interested to know that Chili Peppers are great analgesics the active component in them is called capsaicin and it's been shown over time to reduce certain pain causing neurotransmitters it's currently used in topical form for all kinds of health problems ranging from post surgical pain to arthritis even things like psoriasis and if that is not enough it's also known to cause weight loss a 2009 study found that capsaicin can actually alter key proteins found in fat making it a natural and viable method for reducing abdominal fat of course these are just a small handful of spices that are good for your health but there's actually way more oregano garlic nutmeg and a bunch of others all have their own unique health benefits so eat up maybe you can stave off cancer probably not but it won't hurt right if you're interested in cramming your brain with even more knowledge then let me remind you guys that we have a new show hosted by trace and myself called test-tube that's like dnews but for current events we just put up a new episode today on the current situation surrounding gang violence in Chicago so if that is something you've nbeen wanting more clarification on go watch that episode in the meantime let us know in the comments below what your favorite spice is personally I'm a fan of nutmeg it's also great in sangria as always thank you guys for watching
+					
+					
+					
+				</p>
+				<p>
+					Hey guys,Tara here from Dnews and if you are a person who enjoys cooking or eating then you'll happy to know that many of spices we use in our food everyday can also have very real health benefits a new study from Rush University Medical Center finds that cinnamon can actually reverse the anatomical changes that occur in brain of mice.
+
+
+
+				</p>
+			</video>
+
+
+			<div id="controls">
+				<form id="video_form">
+					<fieldset>
+						<input type="button" id="playbtn" onclick="" value="Play">
+						<input type="button" id="pausebtn" onclick="" value="Pause">
+						<input type="button" id="mutebtn" class="muted" onclick="" value="Mute">
+						<input type="button" id="stopbtn" onclick="" value="Stop">
+						<input type="button" id="seekinfo" onclick="" value="Go to Statistics">
+					</fieldset>
+					<fieldset>
+						<select id="video_select">
+							<option>Select a video </option>
+							<option value="assets/spices.mp4">Spices and Health(mp4)</option>
+							<option value="assets/Spices.webm">Spices and Health(webm)</option>
+							<option value="assets/Cinnamonstory.mp4">Origin Of Cinnamo</option>
+							
+						</select>
+					</fieldset>
+					
+				</form>
+			</div>
+
+			<div class="pop hide">
+				<img class="thumbnail" src="">
+				<p class="title"></p>
+
+			</div>
+		</section>
+  
+		<section class="col2">
+			<iframe id="web" src="">
+
+			</iframe>
+
+			
+
+		</section>
+
+	</main>
+
+</body>
+</html>
